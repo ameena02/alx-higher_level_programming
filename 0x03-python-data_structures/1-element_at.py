@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-def ielement_at(my_list, idx):
-    if idx < 0 or idx > len(my_list) - 1:
-        return 'None'
-    else:
-        return my_list[idx]
+def element_at(my_list, idx):
+    size = len(my_list)
+    if (idx < 0 or idx > size - 1):
+        return (None)
+    for j, e in enumerate(my_list):
+        if (j == idx):
+            return (e)
